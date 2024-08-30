@@ -72,7 +72,7 @@ const LoginForm = ({ onLogin = () => {} }) => {
       let loginDetails = { adminemail: formData.email, adminpassword: formData.password };
       console.log('---form---', loginDetails);
       // dispatch(AC_SETLOGINADMIN(Logindata));
-      axios.post('https://admin-panel-service.onrender.com/admin/login', loginDetails)
+      axios.post('https://adminpanel-m7rn.onrender.com/admin/login', loginDetails)
         .then((response) => {
           console.log("------", response.data);
           if (response.data.status) {
